@@ -7,60 +7,31 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.bbr.template.myFeature> a skos:Concept,
+<https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.bbr.template.records-prov> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "Custom Feature" ;
-    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
-    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    rdfs:label "Record with Provenance" ;
+    dct:abstract "AOGC API Record item with a provenance trace supporting the PROV-O model and DAG (directed acyclic graph) through both object nesting and references" ;
+    dct:created "2023-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/json-full/bbr/template/myFeature/index.json" ],
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/json-full/bbr/template/records-prov/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/bblock/ogc.bbr.template.records-prov" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/markdown/bbr/template/myFeature/index.md" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/bblock/ogc.bbr.template.myFeature" ] ;
-    dct:hasVersion "1.0" ;
-    dct:modified "2024-11-18"^^xsd:date ;
-    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
-    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/> ;
-    dcat:keyword "examples",
-        "feature" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.bbr.template.mySchema>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.geo.features.feature> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/myFeature/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/myFeature/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/myFeature/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/rules.shacl> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
-
-<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
-
-<https://example.com/sources/1> rdfs:label "Sample source document" .
-
-<https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.bbr.template.mySchema> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Schema ;
-    rdfs:label "My Schema" ;
-    dct:abstract "An example schema defining the set of properties of any type of object." ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/markdown/bbr/template/mySchema/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/json-full/bbr/template/mySchema/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/bblock/ogc.bbr.template.mySchema" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/markdown/bbr/template/records-prov/index.md" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-11-18"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
+    dct:source <https://www.w3.org/TR/prov-o/> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/> ;
-    dcat:keyword "templates" ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/mySchema/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/mySchema/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/mySchema/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/rules.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/context.jsonld> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    dcat:keyword "item",
+        "provenance",
+        "stac" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.api.records.v1.schemas.recordGeoJSON>,
+        <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/ogc.ogc-utils.prov> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/contrib> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/> a skos:ConceptScheme,
@@ -74,14 +45,18 @@ including [links](https://google.es).
 """ ;
     skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
     bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/tests/report.html> ;
-    bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
+    bblocks:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json>,
+        <https://opengeospatial.github.io/bblocks/register.json> .
+
+<https://www.w3.org/TR/prov-o/> rdfs:label "PROV-O Specification" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-11-18T02:03:23.214353"^^xsd:dateTime ;
-    prov:startedAtTime "2024-11-18T02:03:23.147427"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-18T02:17:02.914723"^^xsd:dateTime ;
+    prov:startedAtTime "2024-11-18T02:17:02.852034"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:3845ad81735deba7beebf43f3465c1c8321a3ff8" ;
+            dct:hasVersion "git:b1c88774c6ddc66ea4ca968830ee8197c482bdad" ;
             rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

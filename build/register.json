@@ -2,7 +2,7 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-11-18T02:03:22.102902",
+  "modified": "2024-11-18T02:17:00.691835",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"39d32ff771f87d20ecb44bfa3d868d5942b51074",
@@ -16,116 +16,61 @@
   "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/",
   "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/tests/report.html",
   "imports": [
-    "https://opengeospatial.github.io/bblocks/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json",
+    "https://ogcincubator.github.io/bblock-prov-schema/build/register.json"
   ],
   "bblocks": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "itemIdentifier": "ogc.bbr.template.records-prov",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Record with Provenance",
+      "highlighted": true,
+      "abstract": "AOGC API Record item with a provenance trace supporting the PROV-O model and DAG (directed acyclic graph) through both object nesting and references",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "dateTimeAddition": "2023-12-08T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-register",
+      "register": "ogcincubator",
       "version": "0.1",
       "dateOfLastChange": "2024-11-18",
-      "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
+          "title": "PROV-O Specification",
+          "link": "https://www.w3.org/TR/prov-o/"
         }
       ],
-      "maturity": "mature",
-      "scope": "unstable",
+      "scope": "contrib",
       "tags": [
-        "templates"
+        "stac",
+        "item",
+        "provenance"
       ],
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/mySchema/context.jsonld",
-      "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/mySchema/schema.json"
-      },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-records-prov-dq/blob/master/build/tests/bbr/template/mySchema/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/markdown/bbr/template/mySchema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/json-full/bbr/template/mySchema/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/bblock/ogc.bbr.template.mySchema"
-        }
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2024-11-18",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "maturity": "development",
-      "scope": "unstable",
+      "shaclRules": {},
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.template.mySchema"
+        "ogc.ogc-utils.prov",
+        "ogc.api.records.v1.schemas.recordGeoJSON"
       ],
-      "tags": [
-        "feature",
-        "examples"
-      ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/mySchema/rules.shacl"
-        ]
-      },
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/myFeature/schema.json"
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/myFeature/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/myFeature/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/myFeature/",
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/records-prov/schema.yaml",
+      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/_sources/records-prov/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-records-prov-dq/blob/master/build/tests/bbr/template/myFeature/",
+      "testOutputs": "https://github.com/ogcincubator/bblocks-records-prov-dq/blob/master/build/tests/bbr/template/records-prov/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/markdown/bbr/template/records-prov/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/generateddocs/json-full/bbr/template/records-prov/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/bblock/ogc.bbr.template.myFeature"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/bblock/ogc.bbr.template.records-prov"
         }
       }
     }

@@ -1,0 +1,6 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: STAC Collection
+allOf:
+- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml#/$defs/Entity
+- anyOf:
+  - $ref: https://ogcincubator.github.io/bblocks-ogcapi-records/build/annotated/api/records/v1/schemas/recordGeoJSON/schema.yaml

@@ -1,0 +1,13 @@
+Validation report for ogc.bbr.template.records-prov - Record with Provenance
+Generated 2024-11-18T02:17:02.800752+00:00
+=== Files ===
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
