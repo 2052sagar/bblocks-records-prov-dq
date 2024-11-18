@@ -7,34 +7,34 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://ogcincubator.github.io/ogc.bbr.template.records-prov> a skos:Concept,
+<https://2052sagar.github.io/ogc.bbr.template.records-prov> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "Record with Provenance" ;
     dct:abstract "AOGC API Record item with a provenance trace supporting the PROV-O model and DAG (directed acyclic graph) through both object nesting and references" ;
     dct:created "2023-12-08T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-records-prov-dq/build/generateddocs/markdown/bbr/template/records-prov/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-records-prov-dq/build/generateddocs/json-full/bbr/template/records-prov/index.json" ],
+            rdfs:isDefinedBy "https://2052sagar.github.io/bblocks-records-prov-dq/build/generateddocs/markdown/bbr/template/records-prov/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-records-prov-dq/bblock/ogc.bbr.template.records-prov" ] ;
+            rdfs:isDefinedBy "https://2052sagar.github.io/bblocks-records-prov-dq/bblock/ogc.bbr.template.records-prov" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://2052sagar.github.io/bblocks-records-prov-dq/build/generateddocs/json-full/bbr/template/records-prov/index.json" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2023-12-09"^^xsd:date ;
     dct:source <https://www.w3.org/TR/prov-o/> ;
-    skos:inScheme <https://ogcincubator.github.io/bblocks-records-prov-dq/> ;
+    skos:inScheme <https://2052sagar.github.io/bblocks-records-prov-dq/> ;
     dcat:keyword "item",
         "provenance",
         "stac" ;
-    bblocks:dependsOn <https://ogcincubator.github.io/ogc.api.records.v1.schemas.recordGeoJSON>,
-        <https://ogcincubator.github.io/ogc.ogc-utils.prov> ;
-    bblocks:hasJsonLdContext <https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld> ;
-    bblocks:hasSchema <https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/schema.json>,
-        <https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/schema.yaml> ;
+    bblocks:dependsOn <https://2052sagar.github.io/ogc.api.records.v1.schemas.recordGeoJSON>,
+        <https://2052sagar.github.io/ogc.ogc-utils.prov> ;
+    bblocks:hasJsonLdContext <https://2052sagar.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld> ;
+    bblocks:hasSchema <https://2052sagar.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/schema.json>,
+        <https://2052sagar.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/schema.yaml> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/contrib> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://ogcincubator.github.io/bblocks-records-prov-dq/> a skos:ConceptScheme,
+<https://2052sagar.github.io/bblocks-records-prov-dq/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - My OGC Building Blocks repository" ;
     dct:abstract """This is an example text for the abstract. It should be short and to the point.
@@ -44,7 +44,7 @@ A "Tell me more" link will appear if there is an additional description with a l
 including [links](https://google.es).
 """ ;
     skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
-    bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-records-prov-dq/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://2052sagar.github.io/bblocks-records-prov-dq/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
         <https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> .
@@ -52,15 +52,15 @@ including [links](https://google.es).
 <https://www.w3.org/TR/prov-o/> rdfs:label "PROV-O Specification" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-11-18T02:18:06.601406"^^xsd:dateTime ;
-    prov:startedAtTime "2024-11-18T02:18:06.540385"^^xsd:dateTime ;
+    prov:endedAtTime "2024-11-18T03:39:49.238701"^^xsd:dateTime ;
+    prov:startedAtTime "2024-11-18T03:39:49.176387"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-        [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:76d6512fc2b51109ce5e6a445dfda95b0fb8a538" ;
-            rdfs:seeAlso <https://ogcincubator.github.io/bblocks-records-prov-dq/build/register.json> ] ;
+            dct:hasVersion "git:a629b3d42bde7450b04ca43fbad95ea2ee5a4633" ;
+            rdfs:seeAlso <https://2052sagar.github.io/bblocks-records-prov-dq/build/register.json> ],
+        [ a prov:Entity ;
+            dct:format "application/yaml" ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

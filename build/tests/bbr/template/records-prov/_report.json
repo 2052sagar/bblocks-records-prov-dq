@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.template.records-prov - Record with Provenance",
   "bblockName": "Record with Provenance",
   "bblockId": "ogc.bbr.template.records-prov",
-  "generated": "2024-11-18T02:18:06.524103+00:00",
+  "generated": "2024-11-18T03:39:49.160286+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/template/records-prov/example_1_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/tests/bbr/template/records-prov/example_1_1.json",
+        "url": "https://2052sagar.github.io/bblocks-records-prov-dq/build/tests/bbr/template/records-prov/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -65,7 +65,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/template/records-prov/example_2_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/tests/bbr/template/records-prov/example_2_1.json",
+        "url": "https://2052sagar.github.io/bblocks-records-prov-dq/build/tests/bbr/template/records-prov/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "json"
@@ -120,7 +120,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/template/records-prov/example_3_1.json",
-        "url": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/tests/bbr/template/records-prov/example_3_1.json",
+        "url": "https://2052sagar.github.io/bblocks-records-prov-dq/build/tests/bbr/template/records-prov/example_3_1.json",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "json"

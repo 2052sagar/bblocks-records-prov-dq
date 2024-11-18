@@ -1,5 +1,5 @@
 {
-  "@context": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld",
+  "@context": "https://2052sagar.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld",
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
