@@ -1,0 +1,8 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'STAC Collection'
+allOf:
+  - $ref: bblocks://ogc.ogc-utils.prov#/$defs/Entity
+  - anyOf:
+    - $ref: bblocks://ogc.api.records.v1.schemas.recordGeoJSON
+
+
