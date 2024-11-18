@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.template.records-prov - Record with Provenance
-Generated 2024-11-18T02:17:02.835149+00:00
+Generated 2024-11-18T02:18:06.524041+00:00
 === Files ===
 Using example_3_1.json from examples
 JSON-LD context is present - uplifting

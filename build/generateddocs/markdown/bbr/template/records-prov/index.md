@@ -59,7 +59,7 @@ a STAC item is a prov:Entity with the "wasGeneratedBy" property defined by PROV-
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/context.jsonld",
+  "@context": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld",
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
@@ -185,7 +185,7 @@ A STAC item is a prov:Entity with the "wasGeneratedBy" property defined by PROV-
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/context.jsonld",
+  "@context": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld",
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
@@ -338,7 +338,7 @@ A STAC item is a prov:Entity with the "has_provenance" property whose range is a
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/context.jsonld",
+  "@context": "https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld",
   "stac_version": "1.1.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/prov/v1.0.0/schema.json"
@@ -454,8 +454,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/schema.yaml)
 
 
 # JSON-LD Context
@@ -1185,7 +1185,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/bblocks-records-prov-dq/undefined/build/annotated/bbr/template/records-prov/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/bblocks-records-prov-dq/build/annotated/bbr/template/records-prov/context.jsonld)
 
 ## Sources
 
